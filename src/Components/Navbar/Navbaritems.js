@@ -9,7 +9,7 @@ export const navbarItems = [
         id: 1,
         icon: <HomeIcon />,
         name: 'Home',
-        route: 'home'
+        route: '/home'
     },
 
     {
@@ -31,5 +31,6 @@ export const navbarItems = [
         icon: <AlbumIcon />,
         name: 'Genres',
         route: 'genres'
-    }
+    },
+
 ]

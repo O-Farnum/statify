@@ -9,5 +9,10 @@ export const mainTheme = createTheme({
       secondary: {
         main: '#1DB954',
       },
+      overrides: {
+        MuiButton: {
+            borderColor: "#1DB954",
+        }
+      }
     },
   });

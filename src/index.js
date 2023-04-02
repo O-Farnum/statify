@@ -2,19 +2,20 @@ import React from 'react';
 import './index.css';
 import App from './App';
 import ReactDOM from "react-dom/client";
+import Login from './Components/Pages/Login';
 import Songs from './Components/Pages/Songs';
 import Home from './Components/Pages/Home';
 import Artists from './Components/Pages/Artists';
 import Genres from './Components/Pages/Genres';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import "./index.css";
-import {mainTheme} from './Components/Consts/mainTheme';
+import {mainTheme} from './Components/Theme/mainTheme';
 import { ThemeProvider } from '@mui/material/styles';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: [<App />, <Login />],
     children: [
       {
         path: 'home',
